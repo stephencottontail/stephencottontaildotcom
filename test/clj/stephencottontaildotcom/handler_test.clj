@@ -1,9 +1,9 @@
-(ns personal-site-2023.handler-test
+(ns stephencottontaildotcom.handler-test
   (:require
     [clojure.test :refer :all]
     [ring.mock.request :refer :all]
-    [personal-site-2023.handler :refer :all]
-    [personal-site-2023.middleware.formats :as formats]
+    [stephencottontaildotcom.handler :refer :all]
+    [stephencottontaildotcom.middleware.formats :as formats]
     [muuntaja.core :as m]
     [mount.core :as mount]))
 
@@ -13,8 +13,8 @@
 (use-fixtures
   :once
   (fn [f]
-    (mount/start #'personal-site-2023.config/env
-                 #'personal-site-2023.handler/app-routes)
+    (mount/start #'stephencottontaildotcom.config/env
+                 #'stephencottontaildotcom.handler/app-routes)
     (f)))
 
 (deftest test-app

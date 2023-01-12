@@ -1,4 +1,4 @@
-(defproject personal-site-2023 "0.1.0-SNAPSHOT"
+(defproject stephencottontaildotcom "0.1.0-SNAPSHOT"
 
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
@@ -36,14 +36,14 @@
   :test-paths ["test/clj"]
   :resource-paths ["resources"]
   :target-path "target/%s/"
-  :main ^:skip-aot personal-site-2023.core
+  :main ^:skip-aot stephencottontaildotcom.core
 
   :plugins [] 
 
   :profiles
   {:uberjar {:omit-source true
              :aot :all
-             :uberjar-name "personal-site-2023.jar"
+             :uberjar-name "stephencottontaildotcom.jar"
              :source-paths ["env/prod/clj" ]
              :resource-paths ["env/prod/resources"]}
 

@@ -1,4 +1,4 @@
-(ns personal-site-2023.middleware.formats
+(ns stephencottontaildotcom.middleware.formats
   (:require
     [luminus-transit.time :as time]
     [muuntaja.core :as m]))

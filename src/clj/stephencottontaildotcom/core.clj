@@ -1,9 +1,9 @@
-(ns personal-site-2023.core
+(ns stephencottontaildotcom.core
   (:require
-    [personal-site-2023.handler :as handler]
-    [personal-site-2023.nrepl :as nrepl]
+    [stephencottontaildotcom.handler :as handler]
+    [stephencottontaildotcom.nrepl :as nrepl]
     [luminus.http-server :as http]
-    [personal-site-2023.config :refer [env]]
+    [stephencottontaildotcom.config :refer [env]]
     [clojure.tools.cli :refer [parse-opts]]
     [clojure.tools.logging :as log]
     [mount.core :as mount])

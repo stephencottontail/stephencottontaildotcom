@@ -1,4 +1,4 @@
-(ns personal-site-2023.layout
+(ns stephencottontaildotcom.layout
   (:require
     [clojure.java.io]
     [selmer.parser :as parser]

@@ -1,4 +1,4 @@
-(ns personal-site-2023.nrepl
+(ns stephencottontaildotcom.nrepl
   (:require
     [nrepl.server :as nrepl]
     [clojure.tools.logging :as log]))

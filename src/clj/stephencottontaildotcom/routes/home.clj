@@ -1,8 +1,8 @@
-(ns personal-site-2023.routes.home
+(ns stephencottontaildotcom.routes.home
   (:require
-   [personal-site-2023.layout :as layout]
+   [stephencottontaildotcom.layout :as layout]
    [clojure.java.io :as io]
-   [personal-site-2023.middleware :as middleware]
+   [stephencottontaildotcom.middleware :as middleware]
    [ring.util.response]
    [ring.util.http-response :as response]))
 

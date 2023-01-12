@@ -1,12 +1,12 @@
-(ns personal-site-2023.handler
+(ns stephencottontaildotcom.handler
   (:require
-    [personal-site-2023.middleware :as middleware]
-    [personal-site-2023.layout :refer [error-page]]
-    [personal-site-2023.routes.home :refer [home-routes]]
+    [stephencottontaildotcom.middleware :as middleware]
+    [stephencottontaildotcom.layout :refer [error-page]]
+    [stephencottontaildotcom.routes.home :refer [home-routes]]
     [reitit.ring :as ring]
     [ring.middleware.content-type :refer [wrap-content-type]]
     [ring.middleware.webjars :refer [wrap-webjars]]
-    [personal-site-2023.env :refer [defaults]]
+    [stephencottontaildotcom.env :refer [defaults]]
     [mount.core :as mount]))
 
 (mount/defstate init-app

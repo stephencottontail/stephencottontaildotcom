@@ -1,6 +1,6 @@
-(ns personal-site-2023.dev-middleware
+(ns stephencottontaildotcom.dev-middleware
   (:require
-    [personal-site-2023.config :refer [env]]
+    [stephencottontaildotcom.config :refer [env]]
     [ring.middleware.reload :refer [wrap-reload]]
     [selmer.middleware :refer [wrap-error-page]]
     [prone.middleware :refer [wrap-exceptions]]))
@@ -10,4 +10,4 @@
       wrap-reload
       wrap-error-page
       ;; disable prone middleware, it can not handle async
-      (cond-> (not (env :async?)) (wrap-exceptions {:app-namespaces ['personal-site-2023]}))))
+      (cond-> (not (env :async?)) (wrap-exceptions {:app-namespaces ['stephencottontaildotcom]}))))

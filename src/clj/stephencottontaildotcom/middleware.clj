@@ -1,12 +1,12 @@
-(ns personal-site-2023.middleware
+(ns stephencottontaildotcom.middleware
   (:require
-    [personal-site-2023.env :refer [defaults]]
+    [stephencottontaildotcom.env :refer [defaults]]
     [clojure.tools.logging :as log]
-    [personal-site-2023.layout :refer [error-page]]
+    [stephencottontaildotcom.layout :refer [error-page]]
     [ring.middleware.anti-forgery :refer [wrap-anti-forgery]]
-    [personal-site-2023.middleware.formats :as formats]
+    [stephencottontaildotcom.middleware.formats :as formats]
     [muuntaja.middleware :refer [wrap-format wrap-params]]
-    [personal-site-2023.config :refer [env]]
+    [stephencottontaildotcom.config :refer [env]]
     [ring.middleware.flash :refer [wrap-flash]]
     [ring.adapter.undertow.middleware.session :refer [wrap-session]]
     [ring.middleware.defaults :refer [site-defaults wrap-defaults]])

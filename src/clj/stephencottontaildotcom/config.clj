@@ -1,4 +1,4 @@
-(ns personal-site-2023.config
+(ns stephencottontaildotcom.config
   (:require
     [cprop.core :refer [load-config]]
     [cprop.source :as source]

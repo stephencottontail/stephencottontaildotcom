@@ -1,7 +1,7 @@
-(ns personal-site-2023.core-test
+(ns stephencottontaildotcom.core-test
   (:require
     [clojure.test :refer :all]
-    [personal-site-2023.core :refer :all]))
+    [stephencottontaildotcom.core :refer :all]))
 
 (deftest pairs-of-values
   (let [args ["--server" "localhost"
